@@ -35,8 +35,9 @@ class EmployeeForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
+            <form className="employee-form" onSubmit={this.handleSubmit}>
                 <input
+                    className="employee-form input"
                     type="text"
                     name="name"
                     placeholder="Name"
@@ -44,6 +45,7 @@ class EmployeeForm extends React.Component {
                     onChange={this.handleInputChange}
                 />
                 <input
+                    className="employee-form input"
                     type="email"
                     name="email"
                     placeholder="Email"
@@ -51,6 +53,7 @@ class EmployeeForm extends React.Component {
                     onChange={this.handleInputChange}
                 />
                 <input
+                    className="employee-form input"
                     type="text"
                     name="title"
                     placeholder="Job Title"
@@ -58,13 +61,14 @@ class EmployeeForm extends React.Component {
                     onChange={this.handleInputChange}
                 />
                 <input
+                    className="employee-form input"
                     type="text"
                     name="department"
                     placeholder="Department"
                     value={this.state.department}
                     onChange={this.handleInputChange}
                 />
-                <button type="submit">Submit</button>
+                <button className="employee-form button" type="submit">Submit</button>
             </form>
         );
     }
